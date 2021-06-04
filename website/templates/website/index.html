@@ -1,0 +1,158 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Mais Populares</span>
+    </h4>
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+            <div class="zoom">
+              <figure>
+                {% load static %}
+                <img src="{% static "website/images/Massa-Gratinada-Frango.jpg" %}" alt="Massa-Gratinada-Frango">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Massa Gratinada Frango</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Massa-com-Atum.jpg" %}" alt="Massa-com-Atum">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Massa com Atum</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Lombos-Salmao-Bulhao-Pato.jpg" %}" alt="Lombos-Salmao-Bulhao-Pato">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Lombos Salmao Bulhao Pato</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Filetes-de-Linguado-Panados.jpg" %}" alt="Filetes-de-Linguado-Panados">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Filetes de Linguado Panados</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Waffles.jpg" %}" alt="Waffles">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Waffles</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Petisco-de-Sardinhas.jpg" %}" alt="Petisco-de-Sardinhas">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Petisco de Sardinhas</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Mais Rapidas</span>
+    </h4>
+
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Bolas-de-Berlim.jpg" %}" alt="Bolas-de-Berlim">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Bolas de Berlim</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Espetadas-Recheadas-com-Salsichas-Frescas.jpg" %}" alt="Espetadas-Recheadas">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Espetadas Recheadas</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Ovos-Verdes.jpg" %}" alt="Ovos-Verdes">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Ovos Verdes</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Salada-de-Ovas.jpg" %}" alt="Salada-de-Ovas">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Salada de Ovas</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Leite-Creme-Coco.jpg" %}" alt="leite-creme">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Leite Creme</p>
+          </a>
+        </div>
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Paezinhos-Recheados-com-Atum.jpg" %}" alt="Paezinhos-Recheados-com-Atum">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Paezinhos Recheados com Atum</p>
+          </a>
+        </div>
+      </div>
+    </section>
+{% endblock %}

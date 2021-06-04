@@ -1,0 +1,64 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <section>
+      <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">ARROZ DE ALECRIM</h2>
+      <div class="rowReceita">
+        <div class="columnReceita">
+          {% load static %}
+          <p><img src="{% static "website/images/Arroz-de-Alecrim.jpg" %}" width="350" height="270" alt="massada" ></p>
+        </div>
+        <div class="columnReceita" style="text-align: left;">
+          <table>
+            <caption><b>Informações</b></caption>
+            <tr>
+              <th rowspan="1"><p class="fa fa-tags" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Receitas</b></p></th>
+              <td><a href="veggie.html">Veggie</a></td>
+            </tr>
+            <tr>
+              <th rowspan="1"><p class="fa fa-tags" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Grau de Dificuldade</b></p></th>
+              <td>Fácil</td>
+            </tr>
+            <tr>
+              <th rowspan="1"><p class="fa fa-eur" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Custo da Refeição</b></p></th>
+              <td>Económico</td>
+            </tr>
+            <tr>
+              <th rowspan="1"><p class="fa fa-clock-o" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Tempo Preparação</b></p></th>
+              <td>10 minutos</td>
+            </tr>
+            <tr>
+              <th rowspan="1"><p class="fa fa-clock-o" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Tempo Cozedura</b></p></th>
+              <td>15 minutos</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section style="text-align: left;padding: 20px;">
+      <h3 style="text-align: left;margin-bottom: 30px"><span style="border-bottom: 3px solid rgb(248, 209, 103);padding: 3px;">Ingredientes (2 Pessoas):</span></h3>
+      <ul>
+        <li><b>3</b> colheres de sopa de azeite</li>
+        <li><b>1</b> cebola grande picada</li>
+        <li><b>120g</b> de chouriço de feijao cortado em cubinhos</li>
+        <li><b>360g</b> de arroz vaporizado</li>
+        <li><b>2</b> raminhos de alecrim</li>
+        <li><b>900</b> ml de caldo de galinha</li>
+        <li>Sal q.b.</li>
+      </ul>
+    </section>
+    <hr>
+    <section style="text-align: left;padding: 20px;">
+      <h3 style="text-align: left;margin-bottom: 30px"><span style="border-bottom: 3px solid rgb(248, 209, 103);padding: 3px;">Modo de Preparação:</span></h3>
+      <p id="Intro" style="margin-bottom: 20px;">1 Num tacho leve ao lume o azeite, a cebola e o chouriço.
+        Mexa e deixe refogar bem.</p>
+      <p id="Intro" style="margin-bottom: 20px;">2 Junte o arroz lavado em várias águas e bem escorrido.
+        Mexa e deixe fritar bem até que o arroz fique translúcido.</p>
+      <p id="Intro" style="margin-bottom: 20px;">3 Adicione o caldo de galinha.
+        Tempere com umas pedrinhas de sal.Por fim, junte os raminhos de alecrim.
+        Tape e deixe cozinhar em lume médio aproximadamente 15 minutos, até que o arroz fique cozido e a água seque.</p>
+      <p id="Intro" style="margin-bottom: 20px;">4 Depois do arroz cozido está pronto a servir.
+        A equipa do CulinariaJoDa deseja-lhe um bom apetite!</p>
+    </section>
+{% endblock %}

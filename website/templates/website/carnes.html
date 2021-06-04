@@ -1,0 +1,149 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <section class="receitas">
+        <figure>
+          {% load static %}
+          <img src="{% static "website/images/pratosCarne.jpg" %}" style="width: 100%; height: 290px;" alt="carnes">
+        </figure>
+    </section>
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Carnes</span></h4>
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Massa-Gratinada-Frango.jpg" %}" alt="Massa-Gratinada-Frango">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Massa Gratinada de Frango</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:carnesReceita' %}">
+              <div class="zoom">
+                <figure>
+                   <img src="{% static "website/images/Ensopado-de-Borrego.jpg" %}" alt="Ensopado-de-Borrego">
+                   <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Ensopado de Borrego</p></a>
+          </div>
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Perna-de-Porco-com-Linguica.jpg" %}" alt="Perna-de-Porco-com-Linguica">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Perna de Porco com Linguica</p></a>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Carne-Vaca-Guisada-Esparguete.jpg" %}" alt="Carne-Vaca-Guisada-Esparguete">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Carne Vaca Guisada Esparguete</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:carnesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Magret-de-Pato-com-Molho-de-Frutos-Silvestres.jpg" %}" alt="Magret-de-Pato-com-Molho-de-Frutos-Silvestres" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Magret de Pato</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Alheira-Mirandela-Tradicional.jpg" %}" alt="Alheira-Mirandela-Tradicional">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Alheira Mirandela Tradicional</p></a>
+         </div>
+      </div>
+    </section>
+    <br>
+
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Entradas</span></h4>
+
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Coxinhas-de-Frango.jpg" %}" alt="Coxinhas-de-Frango">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Coxinhas de Frango</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:carnesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Empadas-de-Pato.jpg" %}" alt="Empadas-de-Pato" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Empadas de Pato</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Espetadas-Recheadas-com-Salsichas-Frescas.jpg" %}" alt="Espetadas-Recheadas">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Espetadas Recheadas</p></a>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Tarte-de-Carne-e-Bacon.jpg" %}" alt="Tarte-de-Carne-e-Bacon">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Tarte de Carne e Bacon</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:carnesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Rissois-com-Carne-Cogumelos.jpg" %}" alt="Rissois-com-Carne-Cogumelos" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Rissois com Carne Cogumelos</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:carnesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Croquetes-de-Carne.jpg" %}" alt="Croquetes-de-Carne">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Croquetes de Carne</p></a>
+         </div>
+      </div>
+    </section>
+{% endblock %}

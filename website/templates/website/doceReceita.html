@@ -1,0 +1,77 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+        <section>
+          <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">Waffles</h2>
+          <div class="rowReceita">
+            <div class="columnReceita">
+                {% load static %}
+              <p><img src="{% static "website/images/Waffles.jpg" %}" width="350" height="270" alt="waffles" ></p>
+            </div>
+            <div class="columnReceita" style="text-align: left;">
+              <table>
+                <caption><b>Informações</b></caption>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-tags" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Receitas</b></p></th>
+                  <td><a href="doces.html">Doces</a></td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-tags" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Grau de Dificuldade</b></p></th>
+                  <td>Fácil</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-eur" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Custo da Refeição</b></p></th>
+                  <td>Económico</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-clock-o" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Tempo Preparação</b></p></th>
+                  <td>15 minutos</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-clock-o" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Tempo Cozedura</b></p></th>
+                  <td>8 minutos</td>
+                </tr>
+              </table>
+          </div>
+        </section>
+        <hr>
+        <section style="text-align: left;padding: 20px;">
+          <h3 style="text-align: left;margin-bottom: 30px"><span style="border-bottom: 3px solid rgb(248, 209, 103);padding: 3px;">Ingredientes (2 Pessoas):</span></h3>
+          <ul>
+            <li><b>460g</b> de farinha de trigo sem fermento</li>
+            <li><b>200g</b> de manteiga à temperatura ambiente cortada em cubinhos</li>
+            <li><b>2</b> ovos</li>
+            <li><b>200 ml</b> de leite morno</li>
+            <li><b>13,8 g</b> de fermento seco granulado (3 saquetas de 4,6g)</li>
+            <li><b>50 g</b> de açúcar</li>
+            <li><b>2</b> colheres de chá de essência de baunilha</li>
+            <li><b>1</b> pitada de sal</li>
+            <li><b>180 g</b> de cubos de açúcar cortado em pedaços</li>
+          </ul>
+        </section>
+        <hr>
+        <section style="text-align: left;padding: 20px;">
+          <h3 style="text-align: left;margin-bottom: 30px"><span style="border-bottom: 3px solid rgb(248, 209, 103);padding: 3px;">Modo de Preparação:</span></h3>
+          <p id="Intro" style="margin-bottom: 20px;">1 Numa tigela, coloque o leite, os 50g de açúcar e o fermento.
+            Mexa muito bem e deixe descansar durante 15 minutos.</p>
+          <p id="Intro" style="margin-bottom: 20px;">2 Passado o tempo, junte os ovos, a baunilha e a pitada de sal.
+            Com as varinhas de amassar, comece a amassar lentamente e aos poucos, adicione a farinha.
+            Amasse muito bem durante 10 minutos.</p>
+          <p id="Intro" style="margin-bottom: 20px;">3 Quando a massa estiver homogénea, adicione aos poucos, os cubinhos de manteiga.
+            Amasse muito bem até que a massa fique lisa.
+            Coloque a massa numa tigela, previamente untada com manteiga.
+            Tape a tigela muito bem com película aderente.
+            Deixe descansar durante 2 horas até que a massa levede.</p>
+          <p id="Intro" style="margin-bottom: 20px;">4 Passado o tempo, com a ajuda de uma espátula, envolva muito bem os cubos de açúcar com a massa.
+            Unte uma folha de papel vegetal com um pouco de manteiga ou um pouco de óleo.
+            Divida a massa em 12 porções e coloque-as sobre a folha de papel vegetal.
+            Deixe repousar 10 minutos.</p>
+          <p id="Intro" style="margin-bottom: 20px;">5 Antes da primeira utilização, pincele a máquina com um pouco de manteiga.
+            Coloque as porções de massa na máquina quente e deixe cozer aproximadamente 2 minutos.
+            Não deixe tempo de mais para que não fiquem muito secas.
+            Retire e repita o processo até acabar a massa.
+            Se não utilizarem a massa toda de uma vez, podem guardar as porções no frigorífico de um dia para o outro.
+            Depois de feitos, os waffles, podem ser aquecidos na torradeira ou no micro-ondas.
+            A equipa do CulinariaJoDa deseja-lhe um bom apetite!</p>
+        </section>
+{% endblock %}

@@ -1,0 +1,151 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <section class="receitas">
+      <figure>
+        {% load static %}
+        <img src="{% static "website/images/pratosPeixe.jpg" %}" style="width: 100%; height: 290px;" alt="peixes">
+      </figure>
+    </section>
+
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Peixes</span></h4>
+
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Arroz-de-Bacalhau.jpg" %}" alt="Arroz-de-Bacalhau">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Arroz de Bacalhau</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:peixeReceita' %}">
+              <div class="zoom">
+                <figure>
+                   <img src="{% static "website/images/Bacalhau-Crosta-Broa.jpg" %}" alt="Bacalhau-Crosta-Broa">
+                   <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Bacalhau Crosta Broa</p></a>
+          </div>
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Sufle-de-Salmao.jpg" %}" alt="Sufle-de-Salmao">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Sufle de Salmao</p></a>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Filetes-de-Linguado-Panados.jpg" %}" alt="Filetes-de-Linguado-Panados">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Filetes de Linguado Panados</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:peixeReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Lombos-Salmao-Bulhao-Pato.jpg" %}" alt="Lombos-Salmao-Bulhao-Pato" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Lombos Salmao Bulhao Pato</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Massa-com-Atum.jpg" %}" alt="Massa-com-Atum">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Massa com Atum</p></a>
+         </div>
+      </div>
+    </section>
+    <br>
+
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Entradas</span></h4>
+
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Paezinhos-Recheados-com-Atum.jpg" %}" alt="Paezinhos-Recheados-com-Atum">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Paezinhos Recheados com Atum</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:peixeReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Petisco-de-Sardinhas.jpg" %}" alt="Petisco-de-Sardinhas" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Petisco de Sardinhas</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Sonhos-de-Bacalhau.jpg" %}" alt="Sonhos-de-Bacalhau">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Sonhos de Bacalhau</p></a>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Salada-de-Bacalhau.jpg" %}" alt="Salada-de-Bacalhau">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Salada de Bacalhau</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:peixeReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Salada-de-Ovas.jpg" %}" alt="Salada-de-Ovas" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Salada de Ovas</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:peixeReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Rissois-de-Pescada.jpg" %}" alt="Rissois-de-Pescada">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Rissois de Pescada</p></a>
+         </div>
+      </div>
+    </section>
+{% endblock %}

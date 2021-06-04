@@ -1,0 +1,51 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <section>
+      <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">DEIXE AQUI A SUA RECEITA</h2>
+      <form action="mailto:jodaculinaria@gmail.com" method="post">
+        <fieldset  style="text-align: left;">
+          <legend><b>Identificação:</b></legend>
+          <div class="row">
+            <div class="column">
+              <p>Nome: <br> <input class="comentar" type="text" id="nome" name="nome" size="20" maxlength="20" placeholder="Insira nome"
+                  autofocus required></p>
+              <p>Apelido: <br> <input class="comentar" type="text" id="apelido" name="apelido" size="20" maxlength="20"
+                  placeholder="Insira apelido" required></p>
+              <p>Email: <br> <input class="comentar" type="email" id="email" name="email" autocomplete="on" placeholder="Insira email"
+                  required></p>
+            </div>
+            <div class="column">
+                {% load static %}
+              <img src="{% static "website/images/receita.png" %}" alt="Culinaria JoDa" width="250" height="150" style="text-align: center;margin-top: 40px;margin-left: 70px;">
+            </div>
+          </div>
+          <label for="file-upload" class="custom-file-upload">
+            <i class="fa fa-cloud-upload"></i> Fotos da Receita
+          </label>
+          <input id="file-upload" type="file" name="filename"/>
+          <br><br>
+            <textarea class="comentar"  style="resize: vertical;
+            overflow: auto;" name="mensagem" rows="10" cols="60%" placeholder="Insira aqui a sua Receita"  autofocus required></textarea>
+          <br><br>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </fieldset>
+      </form>
+      <br>
+    </section>
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Receitas Publicadas Recentemente</span></h4>
+    <section >
+      <div class="flex-container">
+          <a href="{% url 'website:peixe' %}"><img class="color" src="{% static "website/images/Massa-com-Atum.jpg" %}" alt="Massa-com-Atum"></a>
+          <a href="{% url 'website:carnes' %}"><img class="color" src="{% static "website/images/Coxinhas-de-Frango.jpg" %}" alt="Coxinhas-de-Frango"></a>
+
+          <a href="{% url 'website:peixe' %}"><img class="color" src="{% static "website/images/Petisco-de-Sardinhas.jpg" %}"  alt="Petisco-de-Sardinhas"></a>
+          <a href="{% url 'website:carnes' %}"><img class="color" src="{% static "website/images/Massa-Gratinada-Frango.jpg" %}" alt="Mousse-de-Iogurte-Grego-e-Morango"></a>
+
+          <a href="{% url 'website:doces' %}"><img class="color" src="{% static "website/images/Bolas-de-Berlim.jpg" %}"  alt="Bolas-de-Berlim"> </a>
+          <a href="{% url 'website:veggie' %}"><img class="color" src="{% static "website/images/Crepes-de-Legumes.jpg" %}" alt="Crepes-de-Legumes"></a>
+      </div>
+    </section>
+  </section>
+{% endblock %}

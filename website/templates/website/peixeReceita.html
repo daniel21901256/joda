@@ -1,0 +1,71 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+        <section>
+          <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">MASSA COM ATUM</h2>
+          <div class="rowReceita">
+            <div class="columnReceita">
+                {% load static %}
+              <p><img src="{% static "website/images/Massa-com-Atum.jpg" %}" width="350" height="270" alt="Massa-com-Atum" ></p>
+            </div>
+            <div class="columnReceita" style="text-align: left;">
+              <table>
+                <caption><b>Informações</b></caption>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-tags" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Receitas</b></p></th>
+                  <td><a href="peixe.html">Peixe</a></td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-tags" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Grau de Dificuldade</b></p></th>
+                  <td>Fácil</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-eur" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Custo da Refeição</b></p></th>
+                  <td>Económico</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-clock-o" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Tempo Preparação</b></p></th>
+                  <td>20 minutos</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-clock-o" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Tempo Cozedura</b></p></th>
+                  <td>30 minutos</td>
+                </tr>
+              </table>
+           </div>
+          </div>
+        </section>
+        <hr>
+        <section style="text-align: left;padding: 20px;">
+          <h3 style="text-align: left;margin-bottom: 30px"><span style="border-bottom: 3px solid rgb(248, 209, 103);padding: 3px;">Ingredientes (2 Pessoas):</span></h3>
+          <ul>
+            <li><b>200g</b> de massa espiral ou outra a gosto</li>
+            <li><b>170g</b> de atum em conserva de azeite</li>
+            <li><b>1</b> cebola pequena picada</li>
+            <li><b>1</b> dente de alho picado</li>
+            <li><b>180g</b> de cogumelos frescos laminados</li>
+            <li><b>100g</b> de folhas de espinafres</li>
+            <li><b>2</b> colheres de chá de azeite</li>
+            <li><b>2</b> colheres de sopa de polpa de tomate</li>
+            <li><b>200 ml</b> de natas</li>
+            <li>Folhas de orégãos secas</li>
+            <li>Sal q.b.</li>
+            <li>Pimenta q.b.</li>
+          </ul>
+        </section>
+        <hr>
+        <section style="text-align: left;padding: 20px;">
+          <h3 style="text-align: left;margin-bottom: 30px"><span style="border-bottom: 3px solid rgb(248, 209, 103);padding: 3px;">Modo de Preparação:</span></h3>
+          <p id="Intro" style="margin-bottom: 20px;">1 Numa panela com água a ferver, coloque sal e um fio de azeite.
+            Adicione a massa e mexa. Deixe cozer conforme o tempo indicado na embalagem. Depois da massa cozida, escorra-a.</p>
+          <p id="Intro" style="margin-bottom: 20px;">2 Num wok ou numa frigideira, coloque o restante azeite, a cebola e o alho.
+            Mexa e deixe refogar.</p>
+          <p id="Intro" style="margin-bottom: 20px;">3 Ao refogado, junte os espinafres.Salteie um pouco até que as folhas amoleçam.
+            Misture os cogumelos.Tempere com sal e pimenta.Salteie tudo até que a água seque.</p>
+          <p id="Intro" style="margin-bottom: 20px;">4 Junte o atum e a polpa de tomate.
+            Mexa muito bem e deixe cozinhar em lume forte durante 1 minuto.</p>
+          <p id="Intro" style="margin-bottom: 20px;">5 Adicione a massa e envolva muito bem.
+            Quando tudo estiver bem quente, junte as natas.Envolva tudo muito bem e quando começar a borbulhar, apague o lume imediatamente.
+            Por fim, polvilhe a massa com as folhas de orégãos. A equipa do CulinariaJoDa deseja-lhe um bom apetite!</p>
+        </section>
+{% endblock %}

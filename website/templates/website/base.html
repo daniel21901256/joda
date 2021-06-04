@@ -1,0 +1,150 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="ANONIMUS">
+  <meta name="keywords" content="Culinaria">
+  <meta name="description" content="Culinaria á portuguesa">
+  {% load static %}
+  <link rel="shortcut icon" type="image/x-icon" href="{% static "website/images/icon.png" %}"/>
+  <link href="{% static "website/css/estilos.css" %}" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="path-to-fontawesome/font-awesome.css">
+  <title>CulinariaJoDa - Receitas portuguesas</title>
+</head>
+
+<body>
+  <br>
+  <div class="parent">
+    <div class="div1">
+      <header>
+        <center>
+          <figure>
+            <img class="resize" src="{% static "website/images/logo2.png" %}" alt="Culinaria JoDa">
+          </figure>
+        </center>
+      </header>
+    </div>
+
+    <div class="div2">
+      <nav>
+        <center>
+          <p>
+          <div class="dropdown">
+            <b><a class="dropbtn" href="{% url 'website:index' %}" {% if request.resolver_match.url_name == 'index' or request.resolver_match.url_name == 'carnes' or request.resolver_match.url_name == 'peixe' or request.resolver_match.url_name == 'doces' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>RECEITAS <i
+                  class="fa fa-chevron-down" style="font-size: 13px;"></i></a></b>
+            <div class="dropdown-content">
+              <a href="{% url 'website:carnes' %}" {% if request.resolver_match.url_name == 'carnes' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>Pratos de Carne</a>
+              <a href="{% url 'website:peixe' %}" {% if request.resolver_match.url_name == 'peixe' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>Pratos de peixe</a>
+              <a href="{% url 'website:doces' %}" {% if request.resolver_match.url_name == 'doces' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>Doces e sobremesas</a>
+            </div>
+          </div>
+          <b>
+            <a href="{% url 'website:videos' %}" {% if request.resolver_match.url_name == 'videos' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>VIDEOS</a>
+            <a href="{% url 'website:veggie' %}" {% if request.resolver_match.url_name == 'veggie' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>VEGGIE</a>
+            <a href="{% url 'website:quemSomos' %}" {% if request.resolver_match.url_name == 'quemSomos' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>QUEM SOMOS</a>
+            <a href="{% url 'website:quizz' %}" {% if request.resolver_match.url_name == 'quizz' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>QUIZZ</a>
+          </b>
+          <div class="dropdown">
+            <b><a class="dropbtn" href="#home" {% if request.resolver_match.url_name == 'receitaNova' or request.resolver_match.url_name == 'opiniao' or request.resolver_match.url_name == 'contactos' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>COMUNIDADE <i class="fa fa-chevron-down"
+                  style="font-size: 13px;"></i></a></b>
+            <div class="dropdown-content">
+              <a href="{% url 'website:receitaNova' %}" {% if request.resolver_match.url_name == 'receitaNova' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>A sua Receita</a>
+              <a href="{% url 'website:opiniao' %}" {% if request.resolver_match.url_name == 'opiniao' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>Deixe-nos a sua Opinião</a>
+              <a href="{% url 'website:contactos' %}" {% if request.resolver_match.url_name == 'contactos' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>O Seu Contacto</a>
+            </div>
+          </div>
+            </p>
+        </center>
+      </nav>
+    </div>
+
+    <div class="div3">
+      <main>
+          {% block main %}
+          {% endblock main %}
+      </main>
+    </div>
+
+    <div class="div4">
+      <aside>
+        <section style="border: 3px solid black;padding: 40px">
+            {% if request.user.username %}
+                <h4 style="text-align: center;"><span
+              style="text-align: center;">Bem Vindo, Chefe {{ request.user.first_name }}!</span></h4>
+                <a href="{% url 'website:logout' %}" style = "margin-bottom: 60px"><button type="button" >LOGOUT</button></a>
+                 {% else %}
+                <h4 style="text-align: center;"><span
+              style="text-align: center;">Torne-se Num Chefe!</span></h4>
+                <a href="{% url 'website:login' %}"><button type="button" >LOGIN</button></a>
+            {% endif %}
+        </section>
+        <section>
+          <h4 class="block-title" style="text-align: center;"><span
+              style="background-color: rgb(248, 209, 103); padding: 3px;">Videos Populares</span></h4>
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/cwUajKqP-bs" title="YouTube video player"
+            frameborder="0" allow="accelerometer;
+           autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p style="text-align:left; margin-top: 2px;">&#128104&#8205&#127859 Caldeirada Portuguesa</p>
+        </section>
+        <hr>
+        <br>
+        <section>
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/qULdIKFhG9Q" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay;
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p style="text-align:left; margin-top: 2px;">&#128104&#8205&#127859 Arroz de Pato</p>
+        </section>
+      </aside>
+
+      <aside>
+        <section>
+          <br>
+          <h4 class="block-title" style="text-align: center;"><span
+              style="background-color: rgb(248, 209, 103); padding: 3px;">Livros Culinaria</span></h4>
+          <div style="position: relative; left: 0; top: 0;">
+            <img class="imgBottom" width="150" height="200" src="{% static "website/images/frase1.jpg" %}" alt="frase1">
+            <img class="imgTop" width="150" height="200" src="{% static "website/images/livroVegan.png" %}" alt="frase1">
+          </div>
+          <br>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <br>
+  <div class="div5">
+  <footer>
+    <center>
+      <div class="row">
+        <div class="column">
+          <p><img src="{% static "website/images/logoFot.png" %}" alt="Culinaria JoDa" width="120" height="100"></p>
+        </div>
+        <div class="column">
+          <b>
+            <p>Sobre Nós:
+          </b>
+          <br><br>
+          Se procura receitas deliciosas e práticas, quer inspirar-se e partilhar
+          ideias úteis para renovar as refeições do seu dia-a-dia, seja bem-vindo, está na página certa!</p>
+        </div>
+        <div class="column">
+          <b>
+            <p>Siga-Nos:
+          </b>
+          <br><br><br>
+          <a href="https://www.facebook.com/ReceitaseDicasCulinaria/" target="_blank" class="fa fa-lg fa-facebook"></a>
+          |
+          <a href="https://www.instagram.com/receitasportuguesas/?hl=pt" target="_blank"
+            class="fa fa-lg fa-instagram"></a> |
+          <a href="https://twitter.com/receitasdept" target="_blank" class="fa fa-lg fa-twitter"></a> |
+          <a href="{% static "website/images/idk.jpg" %}" target="_blank" class="fa fa-lg fa-github"></a></p>
+        </div>
+      </div>
+    </center>
+  </footer>
+</div>
+</body>
+
+</html>

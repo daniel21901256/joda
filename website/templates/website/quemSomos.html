@@ -1,0 +1,186 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+        <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">O NOSSO WEBSITE
+        </h2>
+        <section>
+
+          <h3 style="text-align: center;font-size: 20px;">Mapa do website</h3>
+          <hr>
+          <figure>
+              {% load static %}
+              <a href="{% static "website/images/MapaWebsite2.jpg" %}" target="_blank"><img src="{% static "website/images/MapaWebsite2.jpg" %}" width="500px" alt="mapaWebsite2"></a>
+            <p style="text-align: center;">(click para abrir)</p>
+          </figure>
+          <br>
+          <h3 style="text-align: center;font-size: 20px;">Responsividade</h3>
+          <hr>
+          <figure>
+            <img src="{% static "website/images/mapaWebsite.png" %}" alt="mapaWebsite">
+          </figure>
+        </section>
+        <br>
+        <section>
+          <table>
+            <caption><b>Tabela Inventario</b></caption>
+            <hr>
+            <thead>
+              <tr>
+                <th>Designação</th>
+                <th>Quantidade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Páginas</td>
+                <td>13</td>
+              </tr>
+
+              <tr>
+                <td>Imagens</td>
+                <td>65</td>
+              </tr>
+
+              <tr>
+                <td>Links externos</td>
+                <td>12</td>
+              </tr>
+
+              <tr>
+                <td>Videos</td>
+                <td>11</td>
+              </tr>
+
+              <tr>
+                <td>Animações</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <br><br>
+        <section>
+          <table>
+            <caption><b>Técnicas usadas</b></caption>
+            <hr>
+            <thead>
+              <tr>
+                <th>Carateristicas</th>
+                <th>Elementos/técnicas</th>
+                <th>Exemplos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">Layouts</td>
+                <td>Grid</td>
+                <td>Foi usado como construção e organização do layout do website</td>
+              </tr>
+
+              <tr>
+                <td>FlexBox</td>
+                <td>Foi usado para a galeria de receitas publicadas recentemente</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Etiquetas</td>
+                <td>
+                  <ul>
+                    <li>main</li>
+                    <li>header</li>
+                    <li>footer</li>
+                    <li>figure</li>
+                    <li>iframe</li>
+                    <li>body</li>
+                    <li>nav</li>
+                    <li>section</li>
+                    <li>p,h</li>
+                  </ul>
+                </td>
+                <td rowspan="2">Foram usados em algumas paginas,
+                  por exemplo nesta pagina foi usado o elemento Table
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>table</li>
+                    <li>thead</li>
+                    <li>tbody</li>
+                    <li>form</li>
+                    <li>fieldset</li>
+                    <li>input</li>
+                    <li>label</li>
+                    <li>ul,li,a,aside,svg,image</li>
+                    <li>figcaption,br</li>
+                    <li>hr</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>Animações</td>
+                <td>Foram feitas animações usando keyframes.
+                </td>
+                <td>Foi usado por exemplo, para dar um zoom nas iamgens quando se passava o cursor.
+                </td>
+              </tr>
+              <tr>
+                <td>Seletores</td>
+                <td>Foram usados os tipos de seletores: universal, tipo, classe, id, pseudo-class,
+                  pseudo-elemento</td>
+                <td>Na area de navegação, foi usado o :hover para quando o cursor passar por cima do
+                  elemento muda a cor da bottom border
+                </td>
+              </tr>
+              <tr>
+                <td>Efeitos</td>
+                <td>Foram usados alguns efeitos em imagens para melhorar a aparencia do website
+                </td>
+                <td>Na pagina Receitas, quando o cursor passa por cima da imagem, a propria destaca-se pelo
+                  aumento de tamanho e com o zoom da shadowbox.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <br>
+        <h3 style="text-align: center;font-size: 20px;">Video do Website</h3>
+        <hr>
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/9SGQUFIpCOA" title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endblock %}
+
+
+    <div class="div4">
+      <aside>
+        <section>
+          <h4 class="block-title" style="text-align: center;margin-top: 30px;">
+            <span style="background-color: rgb(248, 209, 103); padding: 3px;">Fonte das Imagens</span></h4>
+          <a href="https://www.saborintenso.com/"><img width="200" height="250" src="images/sabor.jpg" alt="sabor"></a>
+          <br>
+        </section>
+        <br>
+        <h4 class="block-title" style="text-align: center;"><span
+            style="background-color: rgb(248, 209, 103); padding: 3px;">Wordcloud</span></h4>
+        <svg width="300" height="225">
+          <image href="images/wordcloud.jpg"></image>
+          <a href="veggie.html">
+            <polygon opacity="0" points="120,29 120,50 183,50 183,29"></polygon>
+          </a>
+          <a href="index.html">
+            <polygon opacity="0" points="69,63 69,90 236,90 236,63"></polygon>
+          </a>
+          <a href="doces.html">
+            <polygon opacity="0" points="197,98 197,110 247,110 247,98"></polygon>
+          </a>
+          <a href="carnes.html">
+            <polygon opacity="0" points="86,113 86,136 214,136 214,113"></polygon>
+          </a>
+          <a href="peixe.html">
+            <polygon opacity="0" points="91,143 91,176 210,176 210,143"></polygon>
+          </a>
+        </svg>
+      </aside>
+    </div>

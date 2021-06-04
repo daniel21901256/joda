@@ -1,0 +1,18 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">TORNE-SE NUM CHEFE!</h2>
+    {% if message %}
+        <div> {{ message }} </div>
+    {% endif %}
+    <form action="{% url 'website:login' %}" method="POST">
+        {% csrf_token %}
+        <fieldset  style="text-align: center;padding: 20px">
+          <legend><b>LOGIN</b></legend>
+            <input type="text" name="username" placeholder="username"><br>
+            <input type="password" name="password" placeholder="password"><br><br>
+            <input type="submit" value="Login">
+        </fieldset>
+    </form>
+
+{% endblock %}

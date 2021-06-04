@@ -1,0 +1,40 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">DEIXE AQUI O SEU CONTACTO</h2>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <fieldset style="text-align: left;">
+            <legend><b>Identificação:</b></legend>
+
+            {{ form.as_p }}
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    {% if request.user.username %}
+    <form method="POST" action="">
+        <fieldset style="text-align: left;">
+        <legend><b>Contactos:</b></legend>
+            {% for contacto in contactos %}
+                         <p>
+                             <b>Nome:</b> {{ contacto.nome  }} {{  contacto.apelido }} , <b>Telefone:</b> {{  contacto.telefone }}
+                         <a href="{% url 'website:edita' contacto.id %}" style="float: right"><button type="button" >Editar</button></a>
+                        </p>
+            {% endfor %}
+        </fieldset>
+    </form>
+    {%  else %}
+         <form method="POST" action="">
+        <fieldset style="text-align: center;padding: 40px">
+        <legend style="text-align: left"><b>Contactos:</b></legend>
+           <p>Para Editar Contactos Faça Login Primeiro !!</p>
+             <p style="font-size: 11px">Para testar(user: convidado@gmail.com, pass:covid123)</p>
+        </fieldset>
+    </form>
+    {% endif %}
+
+{% endblock %}

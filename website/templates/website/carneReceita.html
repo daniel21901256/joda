@@ -1,0 +1,73 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+        <section>
+          <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">MASSA GRATINADA FRANGO</h2>
+          <div class="rowReceita">
+            <div class="columnReceita">
+                {% load static %}
+              <p><img src="{% static "website/images/Massa-Gratinada-Frango.jpg" %}" width="350" height="270" alt="Massa-Gratinada-Frango" ></p>
+            </div>
+            <div class="columnReceita" style="text-align: left;">
+              <table>
+                <caption><b>Informações</b></caption>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-tags" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Receitas</b></p></th>
+                  <td><a href="carnes.html">Carnes</a></td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-tags" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Grau de Dificuldade</b></p></th>
+                  <td>Fácil</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-eur" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Custo da Refeição</b></p></th>
+                  <td>Económico</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-clock-o" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Tempo Preparação</b></p></th>
+                  <td>15 minutos</td>
+                </tr>
+                <tr>
+                  <th rowspan="1"><p class="fa fa-clock-o" style="margin-top: 3px;margin-bottom: 3px;"><b style="font-family: 'Open Sans',arial,sans-serif;">  Tempo Cozedura</b></p></th>
+                  <td>30 minutos</td>
+                </tr>
+              </table>
+            </div>
+           </div>
+        </section>
+        <hr>
+        <section style="text-align: left;padding: 20px;">
+          <h3 style="text-align: left;margin-bottom: 30px"><span style="border-bottom: 3px solid rgb(248, 209, 103);padding: 3px;">Ingredientes (2 Pessoas):</span></h3>
+          <ul>
+            <li><b>250g</b> de peito de frango cortado em tiras</li>
+            <li><b>170g</b> de massa a gosto</li>
+            <li><b>1</b> molhinho pequeno de manjericão fresco</li>
+            <li><b>1</b> cebola pequena picada finamente</li>
+            <li><b>30g</b> de queijo parmesão cortado em cubinhos</li>
+            <li><b>25g</b> de amêndoas</li>
+            <li><b>2</b> tomates maduros cortados em cubinhos</li>
+            <li><b>1</b> beringela pequena cortada em cubinhos</li>
+            <li><b>1</b> dente de alho picado</li>
+            <li><b>1</b> folha de louro</li>
+            <li><b>125g</b> de queijo mozarela fresco cortado em rodelas finas</li>
+            <li>Azeite, Sal e Pimenta</li>
+          </ul>
+        </section>
+        <hr>
+        <section style="text-align: left;padding: 20px;">
+          <h3 style="text-align: left;margin-bottom: 30px"><span style="border-bottom: 3px solid rgb(248, 209, 103);padding: 3px;">Modo de Preparação:</span></h3>
+          <p id="Intro" style="margin-bottom: 20px;">1 Numa panela com água a ferver, coloque um fio de azeite e sal.
+            Adicione a massa, mexa e deixe cozer conforme indicação na embalagem.Depois da massa cozida, escorra-a.</p>
+          <p id="Intro" style="margin-bottom: 20px;">2 Num tacho, leve ao lume um fio de azeite, a cebola, o louro e o alho.
+            Mexa e deixe refogar um pouco até que a cebola fique vidrada.Junte o tomate, mexa e deixe refogar até que este comece a desfazer-se.</p>
+          <p id="Intro" style="margin-bottom: 20px;">3 Depois de tudo bem refogado, retire a folha de louro e triture até que fique um molho espesso.
+            Tempere com sal e pimenta.Junte a beringela e 150 ml de água.Mexa e deixe cozer aproximadamente 10 minutos.
+            Depois da beringela cozida, retire do lume.</p>
+          <p id="Intro" style="margin-bottom: 20px;">4 Numa tigela, coloque o queijo parmesão, a amêndoa, o manjericão e aproximadamente 3 colheres de sopa de azeite.
+            Triture tudo com a varinha mágica.Tempere o frango com sal e pimenta.Misture bem.</p>
+          <p id="Intro" style="margin-bottom: 20px;">5 Leve uma frigideira ao lume e coloque um fio de azeite.
+            Frite o frango por igual até que fique lourinho.</p>
+          <p id="Intro" style="margin-bottom: 20px;">6 Leve ao forno pré-aquecido nos 210ºC e deixe gratinar aproximadamente 10 minutos até que ganhe cor.
+            Depois do queijo lourinho, retire e sirva.A equipa do CulinariaJoDa deseja-lhe um bom apetite!</p>
+        </section>
+{% endblock %}

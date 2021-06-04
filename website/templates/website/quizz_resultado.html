@@ -1,0 +1,81 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <section>
+    <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">QUIZZ CULINARIA</h2>
+      <form action="" method="POST">
+        <fieldset  style="text-align: left;">
+          <legend><b>Resultados:</b></legend>
+          <table style="width: 70%; margin-left: auto;margin-right: auto;">
+            <caption><b>Tabela de Resultados</b></caption>
+            <hr>
+            <br>
+            <thead>
+              <tr>
+                <th style="width: 20%;">Pergunta</th>
+                <th style="width: 40%;" >Resultado Obtido</th>
+                <th style="width: 40%;">Resultado Esperado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+
+                <td {% if quizz.pergunta_1  == "12" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_1 }}</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td{% if quizz.pergunta_2  == "12" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}>{{ quizz.pergunta_2 }}</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td{% if quizz.pergunta_3  == "12" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_3 }}</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td{% if quizz.pergunta_4  == "18" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_4 }}</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td{% if quizz.pergunta_5.lower  == "setubal" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_5 }}</td>
+                <td>Setubal</td>
+              </tr>
+             <tr>
+                <td>6</td>
+                <td{% if quizz.pergunta_6.lower  == "100 maneiras" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_6 }}</td>
+                <td>100 Maneiras</td>
+              </tr>
+             <tr>
+                <td>7</td>
+                <td{% if quizz.pergunta_7.lower  == "alentejo" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_7 }}</td>
+                <td>Alentejo</td>
+              </tr>
+             <tr>
+                <td>8</td>
+                <td{% if quizz.pergunta_8  == "1" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_8 }}</td>
+                <td>1</td>
+              </tr>
+             <tr>
+                <td>9</td>
+                <td{% if quizz.pergunta_9  == "1" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_9 }}</td>
+                <td>1</td>
+              </tr>
+             <tr>
+                <td>10</td>
+                <td{% if quizz.pergunta_10  == "2" %} style="background-color: #F8D167E4" {%else%} style="background-color: #987456E4" {% endif %}> {{ quizz.pergunta_10 }}</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+            <br>
+            {%  load static %}
+            <img src="{%  static 'website/images/quizz.png' %}">
+            <hr>
+        </fieldset>
+       </form>
+    </section>
+{% endblock %}

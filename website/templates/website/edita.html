@@ -1,0 +1,19 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+      <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">EDITE AQUI O SEU CONTACTO</h2>
+      <form action="{% url 'website:edita' contacto_id %}" method="POST">
+
+        <fieldset  style="text-align: left;">
+          <legend><b>Identificação:</b></legend>
+                    {% csrf_token %}
+                  {{ form.as_p }}
+
+        <a href="{% url 'website:contactos' %}"><button type="button" >Cancelar</button></a>
+        <input type="submit" value="Gravar" class="btn btn-success" >
+        <a href="{% url 'website:apaga' contacto_id %}"><button type="button" >Apagar</button></a>
+        </fieldset>
+      </form>
+
+{% endblock %}
+

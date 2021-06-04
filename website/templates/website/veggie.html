@@ -1,0 +1,151 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <section class="receitas">
+      <figure>
+        {% load static %}
+        <img src="{% static "website/images/vegan.jpg" %}" style="width: 100%; height: 290px;" alt="veggie">
+      </figure>
+    </section>
+
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Saladas e Sopas</span></h4>
+
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Ovos-Verdes.jpg" %}" alt="Ovos-Verdes">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Ovos Verdes</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:veggieReceita' %}">
+              <div class="zoom">
+                <figure>
+                   <img src="{% static "website/images/Muffins-de-Courgette-e-Queijo-de-Cabra.jpg" %}" alt="Muffins-de-Courgette">
+                   <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Muffins de Courgette</p></a>
+          </div>
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Courgette-Redonda-Recheada-com-Cogumelos-e-Queijo-Feta.jpg" %}" alt="Courgette-Redonda-Recheada-com-Cogumelos">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Courgette Recheada com Cogumelos</p></a>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Caril-de-Couve-Flor-e-Grao-de-Bico.jpg" %}" alt="Caril-de-Couve-Flor-e-Grao-de-Bico">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Caril de Couve Flor</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:veggieReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Arroz-de-Alecrim.jpg" %}" alt="Arroz-de-Alecrim" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Arroz-de-Alecrim</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Almondegas-Crocantes-de-Feijao.jpg" %}" alt="Almondegas-Crocantes-de-Feijao">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Almondegas de Feijao</p></a>
+         </div>
+      </div>
+    </section>
+    <br>
+
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Doces</span></h4>
+
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Mousse-de-Frutos-Silvestres-com-Natas-de-Soja-e-Frutose.jpg" %}" alt="Mousse-de-Frutos-Silvestres">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Mousse de Frutos Silvestres</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:veggieReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Queques-Laranjas-Pepitas-Chocolate.jpg" %}" alt="Queques-Laranjas" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Queques Laranjas</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Gelado-de-Banana-com-Iogurte-e-Chocolate-Negro.jpg" %}" alt="Gelado-de-Banana">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Gelado de Banana</p></a>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Mousse-de-Iogurte-Grego-e-Morango.jpg" %}" alt="Mousse-de-Iogurte">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Mousse de Iogurte</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:veggieReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Crepes-de-Legumes.jpg" %}" alt="Crepes-de-Legumes" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Crepes de Legumes</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:veggieReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Sericaia.jpg" %}" alt="Sericaia">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Sericaia</p></a>
+         </div>
+      </div>
+    </section>
+{% endblock %}

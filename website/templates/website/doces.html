@@ -1,0 +1,151 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <section class="receitas">
+      <figure>
+        {% load static %}
+        <img src="{% static "website/images/docesSobremesa.jpg" %}" style="width: 100%; height: 290px;" alt="doces">
+      </figure>
+    </section>
+
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Doces Diversos</span></h4>
+
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Bolas-de-Berlim.jpg" %}" alt="Bolas-de-Berlim">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+            </div>
+            <p style="text-align:left; margin-top: 3px;">Bolas de Berlim</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:docesReceita' %}">
+              <div class="zoom">
+                <figure>
+                   <img src="{% static "website/images/Waffles.jpg" %}" alt="Waffles">
+                   <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Waffles</p></a>
+          </div>
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Broas-de-Mel.jpg" %}" alt="Broas-de-Mel">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Broas de Mel</p></a>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Coquinhos.jpg" %}" alt="Coquinhos">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Coquinhos/p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:docesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Muffins-de-Pera-Recheados-com-Nutella.jpg" %}" alt="Muffins-de-Pera-Recheados-com-Nutella" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Muffins de Pera</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Queques-de-Chocolate.jpg" %}" alt="Queques-de-Chocolate">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Queques de Chocolate</p></a>
+         </div>
+      </div>
+    </section>
+    <br>
+
+    <h4 class="block-title"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Sobremesas</span></h4>
+
+    <section class="receitas">
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Leite-Creme-Coco.jpg" %}" alt="leiteCreme">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Leite Creme</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:docesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Delicia-Gelada-de-Ananas-e-Coco.jpg" %}" alt="Delicia-Gelada-de-Ananas-e-Coco" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Delicia de Ananas</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Natas-do-Ceu-com-Morangos-e-Areias.jpg" %}" alt="Natas-do-Ceu-com-Morangos-e-Areias">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Natas do Ceu</p></a>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+            <div class="zoom">
+              <figure>
+                <img src="{% static "website/images/Trouxinhas-de-Ovos.jpg" %}" alt="Trouxinhas-de-Ovos">
+                <figcaption>saborintenso.com</figcaption>
+              </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Trouxas de Ovos</p></a>
+        </div>
+        <div class="column">
+           <a href="{% url 'website:docesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Sericaia.jpg" %}" alt="Sericaia" >
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Sericaia</p></a>
+            </div>
+        <div class="column">
+          <a href="{% url 'website:docesReceita' %}">
+              <div class="zoom">
+                <figure>
+                  <img src="{% static "website/images/Leite-Creme-de-Chocolate.jpg" %}" alt="Leite-Creme-de-Chocolate">
+                  <figcaption>saborintenso.com</figcaption>
+                </figure>
+          </div>
+            <p style="text-align:left; margin-top: 3px;">Leite Creme de Chocolate</p></a>
+         </div>
+      </div>
+    </section>
+{% endblock %}

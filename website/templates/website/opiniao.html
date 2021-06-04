@@ -1,0 +1,59 @@
+{% extends "website/base.html" %}
+
+{% block main %}
+    <section>
+    <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">AVALIE O NOSSO WEBSITE</h2>
+    <form action="mailto:jodaculinaria@gmail.com" method="Post">
+      <fieldset style="text-align: left;">
+        <legend><b>Comentarios</b></legend>
+        <hr>
+        <br>
+        <b>
+        <label for="vol">Clareza : </label>
+        <input type="range" id="vol" name="Clareza" min="0" max="10" oninput="this.nextElementSibling.value = this.value"> Resposta: <output> 5</output><br><br>
+        <label for="vol">Originalidade :</label>
+        <input type="range" id="vol" name="Originalidade" min="0" max="10" oninput="this.nextElementSibling.value = this.value"> Resposta: <output> 5</output><br><br>
+        <label for="vol">Estrutura :</label>
+        <input type="range" id="vol" name="Estrutura" min="0" max="10" oninput="this.nextElementSibling.value = this.value"> Resposta: <output> 5</output><br><br>
+        <label for="vol">Qualidade :</label>
+        <input type="range" id="vol" name="Qualidade" min="0" max="10" oninput="this.nextElementSibling.value = this.value"> Resposta: <output> 5</output><br><br>
+        </b>
+        <br>
+        <h3>Sugestões e Opiniões</h3>
+        <textarea class="comentar"  style="resize: vertical;
+        overflow: auto;" name="mensagem" rows="10" cols="60%" placeholder="Insira aqui as suas sujestões"></textarea>
+        <br><br>
+        <input style="margin-left: 5px;" type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </fieldset>
+    </form>
+ <br> <br>
+    <form action="" method="POST">
+         <fieldset>
+          <legend><b>Avaliação</b></legend>
+              {% csrf_token %}
+           <br>
+            <div class="rate" style="margin-left: 246px">
+              <input type="radio" id="star5" name='avaliacao' value='5' />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name='avaliacao' value='4' />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name='avaliacao' value='3' />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name='avaliacao' value='2' />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name='avaliacao' value='1' />
+              <label for="star1" title="text">1 star</label>
+            </div>
+             <br />
+             <br />
+             <br />
+             <input style="margin-top: 5px;" type="submit" value="Avaliar" class="btn btn-success"/>
+              <br>
+             {%  load static %}
+            <img src="{%  static 'website/images/quizz2.png' %}">
+             <hr>
+        </fieldset>
+    </form>
+    </section>
+ {% endblock %}
